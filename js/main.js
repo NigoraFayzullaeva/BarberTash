@@ -1,0 +1,16 @@
+// $(function () {
+
+
+//     $('.menu-btn').on('click', function(){
+//         $('ul').fadeIn(1000);
+//     });
+
+// });
+
+$('.menu-btn, .menu').click(function () {
+    if ($('.menu').is(':hidden')) {
+        $('.menu').show('slideToggle');
+    } else {
+        $('.menu').hide('slideToggle');
+    }
+});

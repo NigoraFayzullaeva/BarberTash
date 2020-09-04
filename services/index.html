@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>services</title>
+    <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
@@ -12,10 +13,11 @@
 
     <section id="services">
         <div class="menu">
-            <img src="../img/tashkentbarbershop.svg" alt="" class="menu-img">
+                <a href="/index.html"><img src="../img/tashkentbarbershop.svg" alt="" class="menu-img" data-aos-duration="1000" 
+                    data-aos="flip-left">></a>
             <nav role="navigation">
                 <div class="menu-list">
-                    <ul class="menu">
+                    <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
                         <li><a class="menu-lists" href="/">home</a></li>
                         <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
                         <li><a class="menu-lists" href="/services/index.html">services</a></li>
@@ -24,11 +26,69 @@
                 </div>
             </nav>
         </div>
-        <div class="header-title">
+        <div class="header-title" data-aos-delay="300"
+        data-aos-duration="1200"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <h1 class="header-main-title">Services</h1>
         </div>
     </section>
-    <section id="footer">
+
+    
+
+    <div class="services-list">
+            <h2>HAIRCUT SERVICES </h2>
+        <table class="pricelist__table">
+            <tbody>
+                <tr>
+                    <td>Haircuts</td>
+                    <td>$21.00 </td>
+                </tr>
+                <tr>
+                    <td>Skin Fade</td>
+                    <td>$23.00 </td>
+                </tr>
+                <tr>
+                    <td>Children's Cut</td>
+                    <td>$16.00 </td>
+                </tr>
+                <tr>
+                    <td>Shape Up</td>
+                    <td>$13.00 </td>
+                </tr>
+                <tr>
+                    <td>Senior Citizen</td>
+                    <td>$16.00 </td>
+                </tr>
+                <tr>
+                    <td>Hot Towel Shave</td>
+                    <td>$25.00 </td>
+                </tr>
+                <tr>
+                    <td>Beard Trim</td>
+                    <td>$15.00 </td>
+                </tr>
+                <tr>
+                    <td>Hair Wash</td>
+                    <td>$5.00 </td>
+                </tr>
+                <tr>
+                        <td>Hair Color</td>
+                        <td>$25.00 </td>
+                </tr>
+                <tr>
+                    <td>Full Washed & Disinfect Cape</td>
+                    <td>$2.00 </td>
+                </tr>
+                
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer id="footer">
         <div class="contact">
             <div class="address">
                 <h2 class="address-title">ADDRESS</h2>
@@ -51,5 +111,7 @@
             </div>
         </div>
     </section>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
