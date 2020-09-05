@@ -14,3 +14,8 @@ $('.menu-btn, .menu').click(function () {
         $('.menu').hide('slideToggle');
     }
 });
+
+// video slider
+function videoUrl(hmmmmmm){
+    document.getElementById("slider").src = hmmmmmm;
+}

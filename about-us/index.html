@@ -7,18 +7,26 @@
     <title>about us</title>
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <section id="about-us">
         <div class="menu">
-                <a href="/index.html"><img src="../img/tashkentbarbershop.svg" alt="" class="menu-img" data-aos-duration="1000" 
-                    data-aos="flip-left">></a>
+            <a href="/index.html"><img src="../img/tashkentbarbershop.svg" alt="" class="menu-img"
+                    data-aos-duration="1000" data-aos="flip-left">></a>
             <nav role="navigation">
                 <div class="menu-list">
-                    <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right" >
+
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
                         <li><a class="menu-lists" href="/">home</a></li>
                         <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
                         <li><a class="menu-lists" href="/services/index.html">services</a></li>
@@ -27,18 +35,23 @@
                 </div>
             </nav>
         </div>
-        <div class="header-title" data-aos-delay="300"
-        data-aos-duration="1200"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom">
+        <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
             <h1 class="header-main-title">About Us</h1>
         </div>
     </section>
     <section id="introducing">
-        <p class="introduction">Introducing</p>
+        <p class="introduction-about-us">Introducing</p>
+
         <div class="video">
-            <img src="img/video-bg.jpg" alt="video" class="video-bg">
-            <!-- <i class="play fas fa-play"></i>          -->
+            <video id="slider" autoplay muted loop>
+                <source src="../video/intro_bar.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation-video">
+                <li onClick="videoUrl('../video/video-int.mp4')"><img src="../img/video-bg.jpg"></li>
+
+                <li onClick="videoUrl('../video/intro_bar.mp4')"><img src="../img/video-bg-2.jpg"></li>
+            </ul>
         </div>
         <div class="our-history">
             <img src="../img/grid0.jpg" alt="history-img" class="img-history">
@@ -86,9 +99,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <script src="../js/aos.js"></script>
-    <script src="../js/main.js"></script>
+        </section>
+        <script src="../js/aos.js"></script>
+        <script src="../js/main.js"></script>
 </body>
 
 </html>
