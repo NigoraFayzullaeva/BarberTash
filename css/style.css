@@ -4,12 +4,14 @@
     box-sizing: border-box;
     list-style: none;
 }
-.video{
+
+.video {
     margin-left: 20%;
     margin-bottom: 100px;
     display: flex;
 }
-.navigation-video{
+
+.navigation-video {
     margin-top: 110px;
     position: absolute;
     left: 76%;
@@ -18,16 +20,19 @@
     align-items: flex-end;
     flex-direction: column;
 }
-.navigation-video li img{
+
+.navigation-video li img {
     width: 140px;
     height: 100px;
     transition: 0.5s;
 }
-.navigation-video li img:hover{
+
+.navigation-video li img:hover {
     width: 200px;
     height: 150px;
 }
-.navigation-video li{
+
+.navigation-video li {
     list-style: none;
     cursor: pointer;
     margin: 0px 10px;
@@ -37,14 +42,16 @@
     padding: 3px 3px 0;
     opacity: 0.7;
     transition: 0.5s;
-    
+
 }
-.navigation-video li:hover{
+
+.navigation-video li:hover {
     opacity: 1;
 }
+
 .introduction-about-us {
     text-align: center;
-    margin-top: -30px;
+    margin-top: 35px;
     margin-bottom: 30px;
     color: #000000;
     font-family: "Bitter", Sans-serif;
@@ -71,6 +78,7 @@
     border-bottom: 1px solid #000;
     margin: 0 14px 4px;
 }
+
 .menu-btn {
     display: none;
 }
@@ -253,6 +261,11 @@
     margin-top: 10px;
 }
 
+.about-us-title {
+    font-size: 76px;
+    margin-top: -30px;
+}
+
 .header-button {
     border-style: solid;
     border-width: 3px 3px 3px 3px;
@@ -369,7 +382,7 @@
 
 .description-history {
     background-color: #000;
-    min-width: 660px;
+    /* min-width: 660px; */
     width: 100%;
 }
 
@@ -538,7 +551,8 @@
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    line-height: 24px;
+    /* margin-bottom: 10px; */
 
 }
 
@@ -688,7 +702,7 @@
     color: #fff;
     font-family: Open Sans, sans-serif;
     padding-top: 40px;
-    padding-left: 150px;
+    padding-left: 10%;
 }
 
 h2 {
@@ -699,8 +713,9 @@ h2 {
 }
 
 table.pricelist__table {
-    width: 1000px;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
+    align-items: center;
     border-spacing: 0;
     margin: 0;
     table-layout: auto;
@@ -742,11 +757,24 @@ table.pricelist__table tr:last-child td {
         margin-top: 150px;
     }
 
-    #slider{
+    #slider {
         width: 76%;
     }
 
+    #map-contact {
+        flex-direction: column;
+    }
 
+    
+    .graphic-title{
+        padding-top: 25px;
+    }
+    .time{
+        margin-top: 60px;
+    }
+    .day{
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -787,10 +815,20 @@ table.pricelist__table tr:last-child td {
     .header-main-title {
         font-size: 65px;
     }
-    .img-history{
+
+    .img-history {
         display: none;
     }
-    
+
+    .navigation-video {
+        margin-top: 240px;
+        left: 50%;
+        flex-direction: row;
+    }
+.phone-title{
+    margin-top: 50px;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -814,34 +852,68 @@ table.pricelist__table tr:last-child td {
         margin-left: 33px;
         font-size: 16px;
     }
-.des-subtitle{
-    font-size: 45px;
-    margin-bottom: 0;
-}
-#slider{
-    width: 83%;
-}
-.address-title{
-    margin-top: 55px;
-    margin-bottom: 0;
-}
-.address-title {
-    margin-top: 50px;
-    margin-bottom: 0;
-    font-size: 20px;
-}
-.description-main {
-    margin-bottom: 50px;
-}
-.customer-name{
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.customer-review{
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 15px;
-}
+
+    .des-subtitle {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    #slider {
+        width: 83%;
+    }
+
+    .address-title {
+        margin-top: 40px;
+        margin-bottom: -15px;
+        font-size: 20px;
+    }
+
+    .description-main {
+        margin-bottom: 50px;
+    }
+
+    .customer-name {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .customer-review {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+
+    .since {
+        margin-bottom: 27px;
+        margin-top: 47px;
+    }
+
+    .subtitle-history {
+        margin-bottom: 0;
+        font-size: 38px;
+    }
+
+    .history-des {
+        line-height: 28px;
+    }
+
+    .des-title {
+        height: 390px;
+    }
+
+    .description-history {
+        margin-top: 55px;
+    }
+
+    .graphic-title {
+        font-size: 41px;
+        padding-top: 54px;
+    }
+    .time{
+        margin-top: 80px;
+        margin-bottom: 6px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -874,7 +946,7 @@ table.pricelist__table tr:last-child td {
         height: 70px;
     }
 
-    .menu-btn {
+    /* .menu-btn {
         display: block;
         width: 40px;
         cursor: pointer;
@@ -920,20 +992,53 @@ table.pricelist__table tr:last-child td {
     }
     .menu-lists:hover{
         color: #b08b66;
-    }
-    .address{
+    } */
+    .address {
         margin-left: 25px;
     }
-    .description{
+
+    .description {
         font-size: 14px;
     }
-    .des-subtitle{
+
+    .des-subtitle {
         font-size: 33px;
     }
+
     .description-main {
         margin-bottom: 36px;
     }
-    
+
+    .about-us-title {
+        font-size: 63px;
+    }
+    .graphic-title {
+        font-size: 28px;
+    }
+    .phone-title {
+        margin-top: 35px;
+    }
+    .submit-button {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-top: 7px;
+        margin-bottom: 26px;
+        padding: 8px 15px;
+    }
+    .contact-title{
+        margin-top: 25px;
+    }
+    .input-1{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .phone-number {
+        font-size: 13px;
+        letter-spacing: 3.2px;
+    }
+    .navigation-video {
+        margin-top: 113px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -977,10 +1082,29 @@ table.pricelist__table tr:last-child td {
     .menu-btn span {
         height: 4px;
     }
-    .address-subtitle{
+
+    .address-subtitle {
         font-size: 14px;
     }
-    .address-title{
+
+    .address-title {
         margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+
+    table.pricelist__table tr td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .about-us-title {
+        font-size: 47px;
+    }
+    .graphic-title {
+        font-size: 20px;
     }
 }
