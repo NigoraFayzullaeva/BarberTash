@@ -7,6 +7,7 @@
     <title>about us</title>
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/hamburgers.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -14,32 +15,35 @@
 </head>
 
 <body>
-    <section id="about-us">
-        <div class="menu">
-            <a href="/index.html"><img src="../img/tashkentbarbershop.svg" alt="" class="menu-img"
-                    data-aos-duration="1000" data-aos="flip-left"></a>
-            <nav role="navigation">
-                <div class="menu-list">
-
-                    <div class="menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
-                        <li><a class="menu-lists" href="/">home</a></li>
-                        <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
-                        <li><a class="menu-lists" href="/services/index.html">services</a></li>
-                        <li><a class="menu-lists" href="/contact-us/index.html">contact us</a></li>
-                    </ul>
+        <section id="about-us">
+                <div class="menu-main">
+                    <a href="/index.html"><img src="../img/tashkentbarbershop.svg" alt="" class="menu-img"
+                            data-aos-duration="1000" data-aos="flip-left"></a>
+                    <nav class="navigation">
+        
+                        <div class="menu-list">
+        
+                            <button class="hamburger hamburger--squeeze" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+        
+                            <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
+                                <li><a class="menu-lists" href="/">home</a></li>
+                                <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
+                                <li><a class="menu-lists" href="/services/index.html">services</a></li>
+                                <li><a class="menu-lists" href="/contact-us/index.html">contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
-        </div>
-        <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom">
-            <h1 class="header-main-title about-us-title">About Us</h1>
-        </div>
-    </section>
+                <div class="header-title" data-aos-delay="300" data-aos-duration="1200" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
+                    <h1 class="header-main-title about-us-title">About us</h1>
+                </div>
+            </section>
+    
     <section id="introducing">
         <p class="introduction-about-us">Introducing</p>
 
@@ -78,136 +82,31 @@
     </section>
 
     <footer id="footer">
-        <div class="contact">
-            <div class="address">
-                <h2 class="address-title">ADDRESS</h2>
-                <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
-                    11230</p>
-                
-            </div>
-            <div class="hours">
-                <h2 class="address-title">HOURS</h2>
-                <p class="address-subtitle">10am - 10pm</p>
-                <p class="address-subtitle">7 days a week</p>
-            </div>
-            <div class="phone">
-                <h2 class="address-title">PHONE</h2>
-                <p class="address-subtitle">(917) 770-5939</p>
-                <div class="icons">
-                    <i class="icon fab fa-facebook"></i>
-                    <i class="icon fab fa-twitter"></i>
-                    <i class="icon fab fa-yelp"></i>
+            <div class="contact">
+                <div class="address left-space">
+                    <h2 class="address-title">ADDRESS</h2>
+                    <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
+                        11230</p>
+                </div>
+                <div class="hours left-space">
+                    <h2 class="address-title">HOURS</h2>
+                    <p class="address-subtitle">10am - 10pm</p>
+                    <p class="address-subtitle">7 days a week</p>
+                </div>
+                <div class="phone">
+                    <h2 class="address-title">PHONE</h2>
+                    <p class="address-subtitle">(917) 770-5939</p>
+                    <div class="icons">
+                        <i class="icon fab fa-facebook"></i>
+                        <i class="icon fab fa-twitter"></i>
+                        <i class="icon fab fa-yelp"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        </section>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="../js/aos.js"></script>
         <script src="../js/main.js"></script>
 </body>
 
 </html>
-
-
-<!-- <section id="header">
-    <div class="menu">
-        <img src="img/tashkentbarbershop.svg" alt="" class="menu-img">
-        <div class="menu-list">
-            <a class="menu-lists" href="#">Home</a>
-            <a class="menu-lists" href="#">About us</a>
-            <a class="menu-lists" href="#">Services</a>
-            <a class="menu-lists" href="#">Contact us</a>
-        </div>
-    </div>
-    <div class="header-title">
-        <h4 class="header-description">welcome to</h4>
-        <h2 class="header-main-title">Tashkent Barber Shop</h2>
-        <button class="header-button">see how we do it</button>
-    </div>
-</section>
-
-<section id="features">
-        <p class="introduction">Features</p>
-        <div class="description-main">
-            <h2 class="des-subtitle">Our Services & Prices</h2>
-            <p class="description">Wash + Cut, $25 . Wash and cut with electric trimmer and / or scissors with a razor finish. Shave, $25 . With blade. Preparation with foam and hot towel. FULLY WASHED & DISINFECT Cape for extra $2</p>
-        </div>
-        <div class="features-list container">
-            <div class="feature-1">
-                <img src="img/barber-chair.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Haircut</h2>
-                <p class="feature-description">Awesome and professional
-                    Haircut for only $21</p>
-            </div>
-            <div class="feature-1">
-                <img src="img/scissors.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Children's Cut
-                </h2>
-                <p class="feature-description">Awesome and professional
-                    Children’s Cut for only $16</p>
-            </div>
-            <div class="feature-1">
-                <img src="img/clipper.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Shape Up
-                </h2>
-                <p class="feature-description">Awesome and professional
-                    Shape Up for only $13</p>
-            </div>
-        </div>
-
-        <div class="features-list container-2">
-            <div class="feature-1">
-                <img src="img/foam.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Hair/Beard Color
-                </h2>
-                <p class="feature-description">Awesome and professional
-                    Hair/Beard Color for only $25/15</p>
-            </div>
-            <div class="feature-1">
-                <img src="img/razor.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Beard Trim
-
-                </h2>
-                <p class="feature-description">Awesome and professional
-                    Beard Trim for only $16</p>
-            </div>
-            <div class="feature-1">
-                <img src="img/barber.svg" alt="" class="feature-img">
-                <h2 class="feature-title">Hot Towel Shave
-
-                </h2>
-                <p class="feature-description">Awesome and professional
-                    Hot Towel Shave for only $25</p>
-            </div>
-        </div>
-
-        <div class="graphic">
-            <h2 class="graphic-title">We are working until late time</h2>
-            <i class="window far fa-window-minimize"></i>
-            <p class="time">10AM - 10PM</p>
-            <p class="day">7 DAYS A WEEK</p>
-        </div>
-    </section>
-
-    <section id="footer">
-        <div class="contact">
-            <div class="address">
-                <h2 class="address-title">ADDRESS</h2>
-                <p class="address-subtitle">1809 Avenue M, Brooklyn,</p>
-                <p class="address-subtitle">NY 11230</p>
-            </div>
-            <div class="hours">
-                <h2 class="address-title">HOURS</h2>
-                <p class="address-subtitle">10am - 10pm</p>
-                <p class="address-subtitle">7 days a week</p>
-            </div>
-            <div class="phone">
-                <h2 class="address-title">PHONE</h2>
-                <p class="address-subtitle">(917)770-5939)</p>
-                <div class="icons">
-                    <i class="icon fab fa-facebook"></i>
-                    <i class="icon fab fa-twitter"></i>
-                    <i class="icon fab fa-yelp"></i>
-                </div>
-            </div>
-        </div>
-    </section> -->

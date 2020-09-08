@@ -1,13 +1,6 @@
-// $(function () {
 
 
-//     $('.menu-btn').on('click', function(){
-//         $('ul').fadeIn(1000);
-//     });
-
-// });
-
-$('.menu-btn, .menu').click(function () {
+$('.hamburger, .menu').click(function () {
     if ($('.menu').is(':hidden')) {
         $('.menu').show('slideToggle');
     } else {
@@ -15,7 +8,16 @@ $('.menu-btn, .menu').click(function () {
     }
 });
 
+
+
+var $hamburger = $(".hamburger");
+$hamburger.on("click", function (e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+});
+
+
 // video slider
-function videoUrl(hmmmmmm){
+function videoUrl(hmmmmmm) {
     document.getElementById("slider").src = hmmmmmm;
 }

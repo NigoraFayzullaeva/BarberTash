@@ -8,6 +8,7 @@
     <title>Tashkent Barbershop</title>
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Merriweather:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -23,18 +24,21 @@
 
                 <div class="menu-list">
 
-                    <div class="menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
 
-                    <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
-                        <li><a class="menu-lists" href="/">home</a></li>
-                        <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
-                        <li><a class="menu-lists" href="/services/index.html">services</a></li>
-                        <li><a class="menu-lists" href="/contact-us/index.html">contact us</a></li>
-                    </ul>
+                    
+                        <ul class="menu" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-right">
+                            <li><a class="menu-lists" href="/">home</a></li>
+                            <li><a class="menu-lists" href="/about-us/index.html">about us</a></li>
+                            <li><a class="menu-lists" href="/services/index.html">services</a></li>
+                            <li><a class="menu-lists" href="/contact-us/index.html">contact us</a></li>
+                        </ul>
+                    
+
                 </div>
             </nav>
         </div>
@@ -46,14 +50,24 @@
                     it</a></button>
         </div>
         </section>
-        <section id="introducing">
-            <p class="introduction">Introducing</p>
-            <div class="video">
-                <video id="slider" autoplay muted loop>
-                    <source src="video/intro_bar.mp4" type="video/mp4">
-                </video>
 
+
+        <section id="introducing">
+
+            <div class="video-main">
+                <div class="intro-par">
+                    <p class="introduction">Introducing</p>
+                </div>
+
+                <div class="video">
+                    <video id="slider" autoplay muted loop>
+                        <source src="video/intro_bar.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
+
+
+
 
             <p class="card-title">Customer reviews</p>
             <div class="cards">
@@ -101,13 +115,12 @@
 
         <footer id="footer">
             <div class="contact">
-                <div class="address">
+                <div class="address left-space">
                     <h2 class="address-title">ADDRESS</h2>
                     <p class="address-subtitle">1809 Avenue M <br> Brooklyn, NY <br>
                         11230</p>
-
                 </div>
-                <div class="hours">
+                <div class="hours left-space">
                     <h2 class="address-title">HOURS</h2>
                     <p class="address-subtitle">10am - 10pm</p>
                     <p class="address-subtitle">7 days a week</p>
@@ -122,11 +135,10 @@
                     </div>
                 </div>
             </div>
-            </section>
-            <script src="js/aos.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-            <script src="js/main.js"></script>
+        </footer>
+        <script src="js/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
